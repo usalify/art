@@ -1,0 +1,9 @@
+logs
+.gitattributes
+*.log
+.DS_Store
+thumbs.db
+desktop.ini
+images/*
+src/*
+workspace.code-workspace

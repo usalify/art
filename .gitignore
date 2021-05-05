@@ -1,0 +1,13 @@
+# Cache
+.DS_Store
+thumbs.db
+desktop.ini
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Locks
+package-lock.json
+yarn.lock

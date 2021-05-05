@@ -1,0 +1,66 @@
+{
+  "name": "@usalify/art",
+  "private": false,
+  "description": "Usalify logo and icon.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lucio Benini",
+    "email": "info@pittica.com",
+    "url": "https://pittica.com"
+  },
+  "bugs": {
+    "url": "https://github.com/usalify/art/issues"
+  },
+  "deprecated": false,
+  "homepage": "https://github.com/usalify/art",
+  "keywords": [ "art", "logo", "icon" ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usalify/art.git"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0"
+  },
+  "scripts": {
+    "test": "react-scripts test",
+    "build": "rimraf ./dist && mkdirp ./dist && babel src --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [ ">0.2%", "not dead", "not op_mini all" ],
+    "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "edge": "17",
+            "firefox": "60",
+            "chrome": "67",
+            "safari": "11.1"
+          },
+          "useBuiltIns": "usage",
+          "corejs": "3.6.5"
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  }
+}
