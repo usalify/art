@@ -2,7 +2,7 @@
   "name": "@usalify/art",
   "private": false,
   "description": "Usalify logo and icon.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Lucio Benini",
     "email": "info@pittica.com",
@@ -36,10 +36,13 @@
   },
   "scripts": {
     "test": "react-scripts test",
-    "build": "rimraf ./dist && mkdirp ./dist && babel src --out-dir dist --copy-files"
+    "prepare": "rimraf ./dist && mkdirp ./dist && babel src --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "config": {
+    "access": "public"
   },
   "browserslist": {
     "production": [ ">0.2%", "not dead", "not op_mini all" ],
